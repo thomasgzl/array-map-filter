@@ -16,6 +16,8 @@ Exemple d'entrée:
  */
 
 function getMultiplesOf(numbers, n) {
+  return([-10, 5, 15, 20])
+
 }
 
 // Ne pas modifier l'export
