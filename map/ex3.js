@@ -60,8 +60,19 @@ En sortie:
  */
 
 function getMoviesFreshness(movies) {
-}
 
+  let rate = movies.map(lab => {
+    if (lab.rating < 60) {
+      lab.label = "rotten";
+    } else if ((lab.rating >= 60) && (lab.rating <= 75)) {
+      lab.label = "fresh";
+    } else {
+      lab.label = "certified fresh";
+    }
+    return (lab);
+});
+return (rate);
+}
 
 
 // Ne pas modifier l'export
